@@ -2,16 +2,30 @@
 <head>
 Hello World App! 
 </head>
-<div ng-app="AppForPavan">
+<div ng-app="">
 
 
 <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js">
 
 </script>
+Customer Name : 
+<input type = "text" ng-bind = "customerName">
+
+
+<!--
 
 <script>
 
+var AppForPavan = angular.module("MyFirstController" , []);
 
+AppForPavan.MyFirstController = function($scope){
+
+$scope.customerName = 'Mr'  +$scope.customerName;
+alert("test");
+};
 </script>
+-->
+
+Name Entered : {{customerName}}
 </div>
 </html>
